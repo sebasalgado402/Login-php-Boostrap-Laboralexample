@@ -9,3 +9,4 @@ session_start();
 
  header("location:../Parcial2/index.php");
 ?>
+

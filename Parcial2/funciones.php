@@ -12,6 +12,7 @@
             echo "<script> alert('Datos Incorrectos , serás redireccionado');window.location ='index.php'</script>";
           }
     }
+
     
     function datosPost(){
       if ($_POST['txtCi'] =='' &&
@@ -30,7 +31,6 @@
         $_SESSION['visualTelefono'] = $_POST['txtTelefono'];
         $_SESSION['visualFormacion'] = $_POST['txtFormacion'];
         $_SESSION['visualExplaboral'] = $_POST['txtExplaboral'];
-
       }
     }
     
@@ -39,7 +39,7 @@
       echo "<div class='row'>";
           echo "<div class='col-12'>";
                echo "<div class='card col-md-8 offset-md-2'>";
-                  echo "<div class='card-body col-12'>";
+                  echo "<div class='card-body col-12 border bg-light'>";
                   echo "<div class='row col-12'>";
                   echo  "<div class='col-6'>";
                             echo "<h5 class='card-title'>";

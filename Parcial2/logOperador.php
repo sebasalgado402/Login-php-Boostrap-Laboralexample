@@ -19,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Operador</title>
 </head>
 
 <body>
@@ -27,26 +27,23 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Operador</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-   
+    
       <form class="d-flex">
-        <a href='sessionLogout.php' class="btn btn-outline-primary">cerrar sesion</a>
+        <a href='sessionLogout.php' class="btn btn-outline-danger">cerrar sesion</a>
       </form>
     </div>
   </div>
 </nav>
    
-    <div class="container-sm col-4">
+    <div class="container-sm col-4 border bg-light">
         <form class="row" action="datosGuardados.php" method="post">
             <div class="col-12 mb-2">
-                <h1 class="display-6 text-center">Formulario de Aspirante</h1>
+                <h1 class="display-6 text-center m-3">Formulario de Aspirante</h1>
             </div>
             <div class="row">
                 <div class="col-4">
                     <label for="txtCi" class="form-label">Ingresar C.I</label >
-                    <input type="text" maxlength="8" name="txtCi" id="" class="form-control">
+                    <input type="number" maxlength="8" name="txtCi" id="" class="form-control">
                 </div>
                 <div class="col-12">
                     <label class="text-muted form-label">*Maximo 8 digitos , sin puntos ni guiones*</label>
@@ -66,7 +63,7 @@
             </div>
             <div class="col-6">
                 <label for="txtTelefono" class="form-label">Número de teléfono</label>
-                <input type="tel" min="0" name="txtTelefono" maxlength="9" id="" class="form-control">
+                <input type="number" min="0" name="txtTelefono" maxlength="9" id="" class="form-control">
             </div>
             <div class="col-12">
                 <label for="txtFormacion" class="form-label">Formación académica</label>
@@ -76,7 +73,7 @@
                 <label for="txtExplaboral" class="form-label">Experiencia Laboral</label>
                 <textarea class="form-control" name="txtExplaboral" rows="3"></textarea>
             </div>
-            <div class="d-grid mt-2">
+            <div class="d-grid mt-2 mb-2">
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
             

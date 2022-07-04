@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Hello, world!</title>
+  <title>Bolsa Laboral</title>
 </head>
 
 <body>
@@ -19,11 +19,8 @@
       
       <div class="col-offset-md-6">
         <form action="comparar.php" method="post">
-        <h1 class="h1 text-center">Bolsa de trabajo</h1>
-          <div class="img-logo">
-            <img src="images/trabajo.png" alt="..." >
-          </div>
-          <h1 class="h1 text-center">Iniciar Sesión</h1>
+          
+          <h1 class="display-6 text-center mb-4">Iniciar Sesión</h1>
             <div class="mb-4">
               <!-- <label for="usuario" class="form-label">Ingrese nombre de usuario</label> -->
               <input type="text" name="usuario" id="txtUser" class="form-control" placeholder="Ingrese nombre de usuario" Required>
