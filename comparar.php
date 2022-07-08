@@ -5,25 +5,25 @@ error_reporting(0);
     $passwd = $_POST['passwd'];
 
     $admin = 'Admin';
-    $contraAdmin = '1'; /*admin123*/
+    $contraAdmin = 'admin123'; /*admin123*/
 
     $operador = 'Operador';
-    $contraOperador = '1';/*oper123*/
+    $contraOperador = 'oper123';/*oper123*/
 
     $visual = 'Visualizador';
-    $contraVisual = '1'; /*visu123*/
+    $contraVisual = 'visu123'; /*visu123*/
 
     if($user == $admin && $passwd == $contraAdmin){
         $_SESSION['nombAdm'] = 'Admin';
-        $_SESSION['passAdm'] = '1'; /*admin123*/
+        $_SESSION['passAdm'] = 'admin123'; /*admin123*/
         
     }elseif($user == $operador && $passwd == $contraOperador){
         $_SESSION['nombOp'] = 'Operador';
-        $_SESSION['passOp'] = '1'; /*oper123*/
+        $_SESSION['passOp'] = 'oper123'; /*oper123*/
         
     }elseif($user == $visual && $passwd == $contraVisual){
         $_SESSION['nombVisual'] = 'Visualizador';
-        $_SESSION['passVisual'] = '1'; /*visu123*/
+        $_SESSION['passVisual'] = 'visu123'; /*visu123*/
         
     }
     validar($user,$passwd);
