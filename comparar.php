@@ -16,12 +16,15 @@ error_reporting(0);
     if($user == $admin && $passwd == $contraAdmin){
         $_SESSION['nombAdm'] = 'Admin';
         $_SESSION['passAdm'] = '1'; /*admin123*/
+        
     }elseif($user == $operador && $passwd == $contraOperador){
         $_SESSION['nombOp'] = 'Operador';
         $_SESSION['passOp'] = '1'; /*oper123*/
+        
     }elseif($user == $visual && $passwd == $contraVisual){
         $_SESSION['nombVisual'] = 'Visualizador';
         $_SESSION['passVisual'] = '1'; /*visu123*/
+        
     }
     validar($user,$passwd);
 ?>

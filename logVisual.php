@@ -1,12 +1,12 @@
 <?php
-    include_once('datosGuardados.php');
+    include_once('funciones.php');
     
     error_reporting(0);
     
    if(isset($_SESSION['nombVisual']) && $_SESSION['nombVisual'] !=''){
 
    }else{
-       header("location:../Parcialcopy/index.php");
+       header("location:../Parcial2/index.php");
    }
    
    
@@ -41,8 +41,11 @@
                 
             </div>
             <?php
-
-         generarAspirante($name,$ape, $ci, $dir, $tel, $exp, $form);
+            if($_SESSION['data']==''){
+              echo "<h1 class='display-6 text-center'> No se encontraron datos </h1>";
+             }else{
+               generarAspirante($name,$ape, $ci, $dir, $tel, $exp, $form);
+             }
          
         ?>
 </div>

@@ -4,7 +4,7 @@
    if(isset($_SESSION['nombOp']) && $_SESSION['nombOp'] !=''){
 
    }else{
-       header("location:../Parcialcopy/index.php");
+       header("location:../Parcial2/index.php");
    }
    
 ?>

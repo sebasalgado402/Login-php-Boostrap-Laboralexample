@@ -5,8 +5,9 @@ session_start();
  $_SESSION['nombOp']= '';
  $_SESSION['passOp'] = '';
  $_SESSION['nombVisual']= '';
- $_SESSION['passVisual']='';
-
- header("location:../Parcialcopy/index.php");
+ $_SESSION['passVisual'] = '';
+ 
+ //session_destroy();
+ header("location:../Parcial2/index.php");
 ?>
 

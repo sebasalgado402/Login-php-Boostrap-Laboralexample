@@ -4,7 +4,7 @@
      if(isset($_SESSION['nombAdm']) && $_SESSION['nombAdm']!=''){
 
      }else{
-         header("location:../Parcialcopy/index.php");
+         header("location:../Parcial2/index.php");
      }
     
 ?>
@@ -43,7 +43,12 @@
  $form=$_SESSION['visualFormacion'];
  $exp=$_SESSION['visualExplaboral'];
 
-generarAspiranteAdmin($name,$ape, $ci, $dir, $tel, $exp, $form);
+ if($_SESSION['data']==''){
+  echo "<h1 class='display-6 text-center'> No se encontraron datos </h1>";
+ }else{
+   generarAspirante($name,$ape, $ci, $dir, $tel, $exp, $form);
+ }
+
          
 ?>
 
